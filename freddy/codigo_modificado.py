@@ -8,8 +8,8 @@ from datetime import datetime
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Sistemas321',
-    'database': 'gasolinas1',
+    'password': '',
+    'database': '',
     'charset': 'utf8mb4',
     'collation': 'utf8mb4_general_ci'
 }
