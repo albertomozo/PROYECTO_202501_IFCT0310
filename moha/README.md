@@ -1,5 +1,5 @@
 Estructura de las Tablas
-Tabla "Partidos":
+**Tabla "Partidos"**
 
 ID del Partido (Primary Key)
 Equipo Local
@@ -10,14 +10,14 @@ Estado (Programado/En Curso/Finalizado)
 Resultado Local (número)
 Resultado Visitante (número)
 
-Tabla "Usuarios":
+**Tabla "Usuarios"**
 
 ID Usuario (Primary Key)
 Nombre
 Email
 Saldo/Puntos
 
-Tabla "Apuestas" (nueva tabla necesaria):
+**Tabla "Apuestas" (nueva tabla necesaria)**
 
 ID Apuesta (Primary Key)
 Usuario (Link a tabla Usuarios)
@@ -28,7 +28,9 @@ Fecha de Apuesta
 Puntos Apostados
 Estado (Pendiente/Ganada/Perdida)
 
-Implementación del Formulario
+## PASOS
+
+### Implementación del Formulario
 Opción 1: Formulario Nativo de Airtable
 
 Crea un formulario desde la tabla "Apuestas"
@@ -74,7 +76,8 @@ const enviarApuesta = async (datos) => {
     })
   });
 };
-Automatizaciones Recomendadas
+
+## Automatizaciones Recomendadas
 
 Filtro de Partidos Disponibles: Automatización que solo muestre partidos con estado "Programado"
 Validación de Apuestas: Script que verifique:
@@ -92,4 +95,8 @@ Para que el formulario solo muestre partidos disponibles, puedes usar:
 Vista filtrada en Airtable (solo partidos futuros)
 Fórmula en el campo de selección: {Equipo Local} & " vs " & {Equipo Visitante} & " - " & {Fecha}
 
-¿Te gustaría que profundice en alguna de estas opciones o necesitas ayuda con la configuración específica de alguna parte del sistema?ReintentarClaude puede cometer errores. Por favor, verifique las respuestas.
+## Proyecto compartido en AIRTABLE
+
+Proyecto compartido en Airtable
+
+https://airtable.com/appkqT31ZcotLQZNn/tblpHyB6QC1eQX009/viwriluEGoIEWzyGA?blocks=hide
